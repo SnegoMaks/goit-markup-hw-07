@@ -368,44 +368,91 @@ button {
   background-color: var(--link);
 }
 /*-------section about-------*/
-@media screen and (min-width: 767px) {
+
+@media screen and (max-width: 767px) {
   .about-svg {
-    display: block;
+    display: none;
+  }
+  .card-set-first {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px;
+    align-content: center;
+  }
+  .about-co {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .about-work {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--text-accent);
+    margin-bottom: 8px;
   }
 }
-/* .card-set-first {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .about-svg {
+    display: none;
+  }
+  .about-co {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .about-work {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--text-accent);
+    margin-bottom: 8px;
+  }
+  .card-set-first {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px;
+    align-content: center;
+  }
+  .about-li {
+    width: 351px;
+  }
 }
-.about-co {
-  padding-top: 120px;
-  padding-bottom: 120px;
+@media screen and (min-width: 1200px) {
+  .card-set-first {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .about-co {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .about-li {
+    width: 264px;
+  }
+  .about-svg {
+    display: flex;
+    width: 264px;
+    height: 112px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--about-svg);
+  }
+  .about-work {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--text-accent);
+    margin-top: 8px;
+  }
+  .about-text {
+    line-height: 1.5;
+    margin-top: 8px;
+    color: var(--text-main);
+  }
 }
-.about-li {
-  width: 264px;
-}
-.about-svg {
-  display: flex;
-  width: 264px;
-  height: 112px;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--about-svg);
-}
-.about-work {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--text-accent);
-  margin-top: 8px;
-}
-.about-text {
-  line-height: 1.5;
-  margin-top: 8px;
-  color: var(--text-main);
-} */
 /*------- section wawd------*/
 .wawd {
   padding-bottom: 120px;
