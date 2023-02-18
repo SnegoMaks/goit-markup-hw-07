@@ -112,11 +112,6 @@ button {
     padding: 0 15px;
   }
 }
-/* .container {
-  width: 1158px;
-  padding: 0 15px;
-  margin: 0 auto;
-} */
 
 /*----imposibl----*/
 .link {
@@ -373,7 +368,35 @@ button {
   background-color: var(--link);
 }
 /*-------section about-------*/
-.card-set-first {
+@media screen and (max-width: 1200px) {
+  .about-svg {
+    display: none;
+  }
+  .card-set-first {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px;
+    align-content: center;
+  }
+  .about-co {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .about-work {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--text-accent);
+    margin-bottom: 8px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-li {
+    width: 356px;
+  }
+}
+/* .card-set-first {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
@@ -405,7 +428,7 @@ button {
   line-height: 1.5;
   margin-top: 8px;
   color: var(--text-main);
-}
+} */
 /*------- section wawd------*/
 .wawd {
   padding-bottom: 120px;
