@@ -622,16 +622,13 @@ button {
 
 /*------------footer----------*/
 @media screen and (max-width: 767) {
-  .footer-logo-text {
-    width: 268px;
-  }
 }
-.footer {
+/*.footer {
   background-color: var(--bgr-main);
   line-height: 1.5;
   padding: 100px 0;
 }
-/*.logo-white {
+ .logo-white {
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
