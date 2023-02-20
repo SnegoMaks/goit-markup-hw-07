@@ -481,7 +481,25 @@ button {
   }
 }
 /*--------section our team---------*/
-.comand {
+@media screen and (max-width: 767px) {
+  .card-set-first {
+    justify-content: center;
+  }
+  .comand {
+    background-color: var(--bgr-sec);
+    padding: 96px 0;
+  }
+}
+@media screen and (min-width: 767px) {
+  .card-set-first {
+    justify-content: center;
+  }
+  .comand {
+    background-color: var(--bgr-sec);
+    padding: 96px 0;
+  }
+}
+/* .comand {
   background-color: var(--bgr-sec);
   padding: 120px 0;
 }
@@ -538,7 +556,7 @@ button {
   border: 1px solid #e7e9fc;
   padding: 32px 16px;
   border-top: none;
-}
+} 
 /*--------Cotumers-------------*/
 .customers {
   padding-top: 130px;
