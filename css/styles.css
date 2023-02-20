@@ -194,12 +194,18 @@ button {
   visibility: visible;
   pointer-events: auto;
 }
+.mobile-menu-navi-li {
+  padding-bottom: 40px;
+}
 .mobile-menu-navi-li > .link {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: var(--head-text);
+}
+.mobile-menu-navi-li .current {
+  color: var(--logo-first);
 }
 .mobile-menu-navi-2 {
   margin-top: auto;
@@ -615,12 +621,17 @@ button {
 }
 
 /*------------footer----------*/
+@media screen and (max-width: 767) {
+  .footer-logo-text {
+    width: 268px;
+  }
+}
 .footer {
   background-color: var(--bgr-main);
   line-height: 1.5;
   padding: 100px 0;
 }
-.logo-white {
+/*.logo-white {
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
@@ -722,7 +733,7 @@ button {
   display: flex;
   position: absolute;
   margin-left: 16px;
-}
+} */
 /*-------portfolio------*/
 /*---------section- btn--------*/
 .many-buttons {
