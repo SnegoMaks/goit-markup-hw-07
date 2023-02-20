@@ -102,7 +102,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 736px;
+    width: 768px;
   }
 }
 
@@ -395,7 +395,7 @@ button {
     margin-bottom: 8px;
   }
 }
-@media screen and (min-width: 767px) and (max-width: 1199px) {
+@media screen and (min-width: 767px) and (max-width: 1200px) {
   .about-svg {
     display: none;
   }
@@ -414,11 +414,12 @@ button {
   .card-set-first {
     display: flex;
     flex-wrap: wrap;
-    gap: 72px;
+    row-gap: 72px;
+    column-gap: 24px;
     align-content: center;
   }
   .about-li {
-    width: 351px;
+    width: 356px;
   }
 }
 @media screen and (min-width: 1200px) {
