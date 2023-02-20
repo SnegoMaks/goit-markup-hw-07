@@ -623,12 +623,12 @@ button {
 /*------------footer----------*/
 @media screen and (max-width: 767) {
 }
-/*.footer {
+.footer {
   background-color: var(--bgr-main);
   line-height: 1.5;
   padding: 100px 0;
 }
- .logo-white {
+.logo-white {
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
@@ -730,7 +730,7 @@ button {
   display: flex;
   position: absolute;
   margin-left: 16px;
-} */
+}
 /*-------portfolio------*/
 /*---------section- btn--------*/
 .many-buttons {
