@@ -437,6 +437,7 @@ button {
   .about-li {
     width: 264px;
   }
+
   .about-svg {
     display: flex;
     width: 264px;
@@ -445,20 +446,21 @@ button {
     align-items: center;
     background-color: var(--about-svg);
   }
-  .about-work {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: var(--text-accent);
-    margin-top: 8px;
-  }
-  .about-text {
-    line-height: 1.5;
-    margin-top: 8px;
-    color: var(--text-main);
-  }
 }
+.about-work {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--text-accent);
+  margin-top: 8px;
+}
+.about-text {
+  line-height: 1.5;
+  margin-top: 8px;
+  color: var(--text-main);
+}
+
 /*------- section wawd------*/
 @media screen and (max-width: 1199px) {
   .wawd {
@@ -490,7 +492,7 @@ button {
     padding: 96px 0;
   }
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .card-set-first {
     justify-content: center;
   }
@@ -499,10 +501,13 @@ button {
     padding: 96px 0;
   }
 }
-/* .comand {
-  background-color: var(--bgr-sec);
-  padding: 120px 0;
+@media screen and (min-width: 1200px) {
+  .comand {
+    background-color: var(--bgr-sec);
+    padding: 120px 0;
+  }
 }
+
 .comand-title {
   font-weight: 700;
   font-size: 36px;
@@ -556,7 +561,7 @@ button {
   border: 1px solid #e7e9fc;
   padding: 32px 16px;
   border-top: none;
-} 
+}
 /*--------Cotumers-------------*/
 .customers {
   padding-top: 130px;
