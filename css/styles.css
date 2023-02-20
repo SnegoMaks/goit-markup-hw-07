@@ -458,18 +458,25 @@ button {
   }
 }
 /*------- section wawd------*/
-.wawd {
-  padding-bottom: 120px;
+@media screen and (max-width: 1199px) {
+  .wawd {
+    display: none;
+  }
 }
-.wawd-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-align: center;
-  text-transform: capitalize;
-  color: var(--text-accent-h2);
-  margin-bottom: 72px;
+@media screen and (min-width: 1200px) {
+  .wawd {
+    padding-bottom: 120px;
+  }
+  .wawd-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--text-accent-h2);
+    margin-bottom: 72px;
+  }
 }
 /*--------section our team---------*/
 .comand {
