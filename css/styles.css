@@ -332,6 +332,31 @@ button {
 }
 /*----------main------------*/
 /*-------section-hero--------*/
+@media screen and (max-width: 767px) {
+  .hero-text {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: var(--hero-text);
+    margin: 0 auto;
+    max-width: 428px;
+
+    margin-bottom: 72px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .hero-text {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    color: var(--hero-text);
+    margin: 0 auto;
+    max-width: 498px;
+    margin-bottom: 48px;
+  }
+}
 .hero {
   background-color: var(--bgr-main);
   background-image: linear-gradient(
@@ -349,7 +374,7 @@ button {
   margin-left: auto;
   margin-right: auto;
 }
-.hero-text {
+/*.hero-text {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -358,7 +383,7 @@ button {
   margin: 0 auto;
   max-width: 498px;
   margin-bottom: 48px;
-}
+}*/
 .hero-button {
   background-color: var(--hero-button);
   color: var(--hero-button-text);
@@ -380,8 +405,6 @@ button {
 }
 /*-------section about-------*/
 
-@media screen and (max-width: 767px) {
-}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .card-set-first {
     display: flex;
