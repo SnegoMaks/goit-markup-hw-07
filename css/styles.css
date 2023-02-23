@@ -671,6 +671,9 @@ button {
 
     margin-top: 72px;
   }
+  .footer-soc-text {
+    margin-top: 72px;
+  }
 }
 .footer {
   background-color: var(--bgr-main);
