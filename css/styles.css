@@ -649,9 +649,15 @@ button {
     max-width: 268px;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 16px;
   }
   .footer-logo-text {
     display: block;
+  }
+  .logo {
+    display: flex;
+
+    justify-content: center;
   }
   .footer-mail-wind {
     flex-direction: column;
@@ -667,11 +673,15 @@ button {
     padding-top: 16px;
   }
   .footer-mail-name {
-    margin-left: 50%;
+    display: flex;
 
+    justify-content: center;
     margin-top: 72px;
   }
   .footer-soc-text {
+    display: flex;
+
+    justify-content: center;
     margin-top: 72px;
   }
 }
@@ -703,8 +713,7 @@ button {
 @media screen and (min-width: 768px) {
   .footer-mail-wind-on {
     width: 264px;
-    height: 40px;
-    padding: 8px 16px;
+    margin-right: 24px;
   }
   .footer-text {
     max-width: 268px;
@@ -770,13 +779,12 @@ button {
 }
 
 .footer-mail-wind-on {
-  width: 264px;
   height: 40px;
   padding: 8px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  margin-right: 24px;
+
   color: var(--footer-soc-text);
   background-color: var(--logo-sec);
 }
