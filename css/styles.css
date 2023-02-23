@@ -663,6 +663,14 @@ button {
   .footer-soc-btn {
     justify-content: center;
   }
+  .footer-mail-btn-div {
+    padding-top: 16px;
+  }
+  .footer-mail-name {
+    margin-left: 50%;
+
+    margin-top: 72px;
+  }
 }
 .footer {
   background-color: var(--bgr-main);
@@ -902,6 +910,27 @@ button {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 /*----modal-window----*/
+@media screen and (max-width: 767px) {
+  .modal {
+    width: 95%;
+    max-width: 408px;
+    height: 95%;
+    max-height: 586px;
+    overflow: scroll;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+  .modal {
+    width: 408px;
+    height: 586px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 408px;
+    height: 584px;
+  }
+}
 .backdrop {
   position: fixed;
   top: 0;
@@ -923,8 +952,7 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 408px;
-  height: 584px;
+
   background-color: var(--modal-win-bgr);
   padding: 72px 24px 24px 24px;
 }
