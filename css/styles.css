@@ -836,6 +836,11 @@ button {
     justify-content: center;
     row-gap: 48px;
   }
+
+  .adapt-img {
+    width: 396px;
+    height: 280px;
+  }
 }
 @media screen and (min-width: 768px) {
   .many-buttons-link {
@@ -847,6 +852,10 @@ button {
     margin-top: 64px;
     row-gap: 72px;
     column-gap: 24px;
+  }
+  .adapt-img {
+    width: 356px;
+    height: 300px;
   }
 }
 @media screen and (min-width: 1200px) {
