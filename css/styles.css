@@ -826,6 +826,17 @@ button {
 }
 /*-------portfolio------*/
 /*---------section- btn--------*/
+@media screen and (max-width: 767px) {
+  .many-buttons-link {
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 767px) {
+  .many-buttons-link {
+    justify-content: center;
+  }
+}
 .many-buttons {
   padding-top: 96px;
   padding-bottom: 120px;
@@ -852,7 +863,7 @@ button {
 }
 .many-buttons-link {
   display: flex;
-  justify-content: center;
+
   gap: 24px;
 }
 
