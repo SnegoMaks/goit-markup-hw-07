@@ -93,7 +93,7 @@ button {
   padding-left: 16px;
   padding-right: 16px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 428px) {
   .container {
     width: 428px;
     margin-left: auto;
@@ -211,12 +211,16 @@ button {
   margin-top: auto;
 }
 .mobile-menu-tel {
+  padding-bottom: 40px;
+}
+.mobile-menu-tel > .link {
   font-weight: 600;
   font-size: 36px;
   line-height: 1.11;
-  padding-bottom: 40px;
+
+  color: var(--mobile-menu-mail);
 }
-.mobile-menu-mail {
+.mobile-menu-mail > .link {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -330,6 +334,7 @@ button {
     gap: 40px;
   }
 }
+
 /*----------main------------*/
 /*-------section-hero--------*/
 @media screen and (max-width: 767px) {
@@ -340,9 +345,21 @@ button {
     letter-spacing: 0.02em;
     color: var(--hero-text);
     margin: 0 auto;
-    max-width: 428px;
+    max-width: 318px;
 
     margin-bottom: 72px;
+  }
+  .hero {
+    max-width: 428px;
+    height: 432px;
+    padding: 112px 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero {
+    max-width: 768px;
+    height: 436px;
+    padding: 108px 0;
   }
 }
 @media screen and (min-width: 767px) {
@@ -357,6 +374,13 @@ button {
     margin-bottom: 48px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1440px;
+    height: 600px;
+    padding: 188px 0;
+  }
+}
 .hero {
   background-color: var(--bgr-main);
   background-image: linear-gradient(
@@ -367,9 +391,7 @@ button {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1440px;
-  height: 600px;
-  padding: 188px 0;
+
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -404,7 +426,11 @@ button {
   background-color: var(--link);
 }
 /*-------section about-------*/
-
+@media screen and (max-width: 768px) {
+  .about-work {
+    text-align: center;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .card-set-first {
     display: flex;
@@ -417,7 +443,7 @@ button {
     width: 356px;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .about-svg {
     display: none;
   }
@@ -432,7 +458,15 @@ button {
     column-gap: 24px;
     align-content: center;
   }
+  .about-work {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+
+    letter-spacing: 0.02em;
+  }
 }
+
 @media screen and (min-width: 1200px) {
   .card-set-first {
     display: flex;
@@ -454,16 +488,17 @@ button {
     justify-content: center;
     align-items: center;
     background-color: var(--about-svg);
+    margin-bottom: 8px;
+  }
+  .about-work {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--text-accent);
   }
 }
-.about-work {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--text-accent);
-  margin-top: 8px;
-}
+
 .about-text {
   line-height: 1.5;
   margin-top: 8px;
@@ -491,6 +526,7 @@ button {
     margin-bottom: 72px;
   }
 }
+
 /*--------section our team---------*/
 
 @media screen and (max-width: 1200px) {
@@ -1057,7 +1093,7 @@ button {
   flex-direction: column;
 }
 .contact-form-text {
-  width: 360px;
+  width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
