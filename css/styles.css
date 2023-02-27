@@ -360,6 +360,18 @@ button {
       url(../images/hero/bg-img-mob.jpg);
   }
 }
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
+  screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (max-width: 767px) and (min-resolution: 192dpi),
+  screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/bg-img-mob_@2x.jpg);
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
     max-width: 768px;
@@ -372,7 +384,7 @@ button {
       url(../images/hero/bg-img-tab.jpg);
   }
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .hero-text {
     font-weight: 700;
     font-size: 56px;
@@ -382,6 +394,18 @@ button {
     margin: 0 auto;
     max-width: 498px;
     margin-bottom: 48px;
+  }
+  @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-width: 768px) and (min-resolution: 192dpi),
+    screen and (min-width: 768px) and (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero/bg-img-tab_@2x.jpg);
+    }
   }
 }
 @media screen and (min-width: 1200px) {
@@ -396,13 +420,19 @@ button {
       url(../images/hero/bg-img-desk.jpg);
   }
 }
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 1200px) and (min-resolution: 192dpi),
+  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/bg-img-desk_@2x.jpg);
+  }
+}
 .hero {
-  background-color: var(--bgr-main);
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/hero/bg-img-desk.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
